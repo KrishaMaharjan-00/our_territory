@@ -1,8 +1,11 @@
 import Link from 'next/link';
-import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
+import Router from 'next/router'
+import NextLink from 'next/link'
+import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer, Button } from '@chakra-ui/react';
 import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
+import { AiFillContacts } from "react-icons/ai";
 
 const Navbar = () => (
   <Flex p='2' borderBottom='1px' borderColor='gray.100'>
@@ -25,6 +28,9 @@ const Navbar = () => (
           </Link>
           <Link href='/search?purpose=for-rent' passHref>
             <MenuItem icon={<FiKey />}>Rent Property</MenuItem>
+          </Link>
+          <Link href='file:///D:/our_territory/components/index.html' passHref>
+            <MenuItem icon={<AiFillContacts />}>Contact Us</MenuItem>
           </Link>
         </MenuList>
       </Menu>
