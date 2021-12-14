@@ -9,6 +9,14 @@ export const filterData = [
     },
     {
       items: [
+        { name: 'Buy', value: 'Phone No:: 9856754211, 9647812450' },
+        { name: 'Rent', value: 'Phone No:: 9856754211, 9647812450' },
+      ],
+      placeholder: 'Agent Info',
+      queryName: 'agent_info',
+    },
+    {
+      items: [
         { name: 'Daily', value: 'daily' },
         { name: 'Weekly', value: 'weekly' },
         { name: 'Monthly', value: 'monthly' },
@@ -152,6 +160,10 @@ export const filterData = [
       {
         name: 'purpose',
         value: purpose,
+      },
+      {
+        name: 'agent_info',
+        value: agent_info,
       },
       {
         name: 'rentFrequency',

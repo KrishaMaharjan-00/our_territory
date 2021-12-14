@@ -9,7 +9,7 @@ import millify from 'millify';
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
 import ImageScrollbar from '../../components/ImageScrollbar';
 
-const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => (
+const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, agent_info, furnishingStatus, amenities, photos } }) => (
   <Box maxWidth='1000px' margin='auto' p='4'>
     {photos && <ImageScrollbar data={photos} />}
     <Box w='full' p='6'>
@@ -37,6 +37,10 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
       <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.100' p='3'>
         <Text>Purpose</Text>
         <Text fontWeight='bold'>{purpose}</Text>
+      </Flex>
+      <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.100' p='3'>
+        <Text>Agent Contact</Text>
+        <Text fontWeight='bold'>9856754211, 9647812450</Text>
       </Flex>
       {furnishingStatus && (
         <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.100' p='3' >
